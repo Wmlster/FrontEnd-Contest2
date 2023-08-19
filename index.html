@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library System</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      table,
+      td,
+      th {
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        padding: 15px;
+      }
+
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        background-color: black;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      input[type="password"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type="number"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type="date"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"]:hover {
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <h1>Library System</h1>
+
+      <a href="#">Books</a>
+      <a href="#">Register</a>
+    </div>
+
+    <table border="1">
+      <h1>Books</h1>
+
+      <tr>
+        <th>Book ID</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Genre</th>
+        <th>Availability</th>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>
+          <table border="1">
+            <th>Pride and Prejudice</th>
+            <tr>
+              <td>Publication date: 2000</td>
+            </tr>
+            <tr>
+              <td>Page count: 250</td>
+            </tr>
+
+            <tr>
+              <td>ISBN: 123-4567890123</td>
+            </tr>
+          </table>
+        </td>
+
+        <td>JAI RATAN</td>
+        <td>
+          Historical: novels that are set in a specific historical period and
+          often depict real historical events or figures.
+        </td>
+        <td>Available</td>
+      </tr>
+
+      <tr>
+        <td>2</td>
+        <td>
+          <table border="1">
+            <th>Pride and Prejudice</th>
+            <tr>
+              <td>Publication date: 1999</td>
+            </tr>
+            <tr>
+              <td>Page count: 300</td>
+            </tr>
+
+            <tr>
+              <td>ISBN: 123-4567890124</td>
+            </tr>
+          </table>
+        </td>
+
+        <td>MULK RAJ ANAND</td>
+        <td>
+          Romance: novels that focus on the romantic relationship between the
+          main characters.
+        </td>
+        <td>Not-Available</td>
+      </tr>
+
+      <tr>
+        <td>3</td>
+        <td>
+          <table border="1">
+            <th>The Complete Novel of Sherlock Holmes</th>
+            <tr>
+              <td>Publication date: 1897</td>
+            </tr>
+            <tr>
+              <td>Page count: 350</td>
+            </tr>
+
+            <tr>
+              <td>ISBN: 123-4567890125</td>
+            </tr>
+          </table>
+        </td>
+
+        <td>MULK RAJ ANAND</td>
+        <td>
+          Mystery: novels that involve a detective or a protagonist solving a
+          crime or a puzzle.
+        </td>
+        <td>Available</td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td>
+          <table border="1">
+            <th>The Magic Of The Lost Temple</th>
+            <tr>
+              <td>Publication date: 1901</td>
+            </tr>
+            <tr>
+              <td>Page count: 450</td>
+            </tr>
+
+            <tr>
+              <td>ISBN: 123-4567890126</td>
+            </tr>
+          </table>
+        </td>
+
+        <td>R.K. NARAYAN</td>
+        <td>
+          Thriller: novels that create suspense and excitement by putting the
+          characters in danger or in a high-stakes situation.
+        </td>
+        <td>Not-Available</td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+        <td>
+          <table border="1">
+            <th>You Can</th>
+            <tr>
+              <td>Publication date: 2015</td>
+            </tr>
+            <tr>
+              <td>Page count: 500</td>
+            </tr>
+
+            <tr>
+              <td>ISBN: 123-4567890127</td>
+            </tr>
+          </table>
+        </td>
+
+        <td>R.K. NARAYAN</td>
+        <td>
+          Comedy: novels that use humor, irony, satire, or parody to entertain
+          or criticize.
+        </td>
+        <td>Available</td>
+      </tr>
+    </table>
+
+    <br /><br />
+
+    <h1 class="item" style="align-items: center">Register</h1>
+
+    <div class="form">
+      <form style="margin-left: auto; margin-right: auto">
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" required /><br />
+        <br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" required /><br /><br />
+
+        <label for="Dateofbirth">Date Of Birth:</label> <br />
+        <input type="date" id="Dateofbirth" name="birthday" required />
+        <br /><br />
+
+        <label for="number">Age:</label> <br />
+        <input type="number" required min="5" max="100" required /> <br /><br />
+
+        <label for="password">Password:</label> <br />
+        <input type="password" id="password" required /><br /><br />
+
+        <label for="cpassword">Confirm Password:</label> <br />
+
+        <input type="password" id="confirm_password" required />
+        <br />
+        <br />
+        <input type="submit" />
+      </form>
+    </div>
+  </body>
+</html>
